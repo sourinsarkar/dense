@@ -7,20 +7,9 @@ dotenv.config({
 
 connectDB();
 
+// Approach-2 (UP)^
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Approach-1 (BELOW):-
 /*
 import express from "express";
 const app = express();
