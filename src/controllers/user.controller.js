@@ -33,7 +33,7 @@ const registerUser = asyncHandler(async (req, res) => {
         throw new ApiError(400, "Full name is requried");
     }
 
-    const existingUser = User.findOne({
+    const existingUser = await User.findOne({
         $or: [{username}, {email}]
     })
 
